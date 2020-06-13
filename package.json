@@ -19,7 +19,6 @@
 		"appId": "nl.vicreo.listener",
 		"mac": {
 			"category": "Keyboard emulator",
-			"icon": "img/icon.icns",
 			"extendInfo": {
 				"LSUIElement": 1
 			}
