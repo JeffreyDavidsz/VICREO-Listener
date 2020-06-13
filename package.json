@@ -1,6 +1,6 @@
 {
-	"name": "vicreo",
-	"version": "2.0.0",
+	"name": "vicreo_listener",
+	"version": "2.0.3",
 	"description": "Hotkey listener for Windows & macOS.",
 	"main": "main.js",
 	"scripts": {
@@ -22,7 +22,7 @@
 			"icon": "img/icon.icns",
 			"extendInfo": {
 				"LSUIElement": 1
-			  }
+			}
 		},
 		"win": {
 			"icon": "img/logo.png"
@@ -43,7 +43,7 @@
 	},
 	"homepage": "https://github.com/JeffreyDavidsz/vicreo-listener#readme",
 	"dependencies": {
-		"dotenv": "^8.2.0",
+		"node-osascript": "^2.1.0",
 		"robotjs": "^0.6.0"
 	},
 	"devDependencies": {
