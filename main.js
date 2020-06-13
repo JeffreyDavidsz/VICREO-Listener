@@ -79,7 +79,11 @@ ipcMain.on('asynchronous-message', (event, arg) => {
 
 
 app.whenReady().then(() => {
-	tray = new Tray(path.join(__dirname, 'img/favicon.png'));
+	if (process.platform == "darwin") {
+		tray = new Tray(path.join(__dirname, 'img/macOSmenuiconTemplate.png'));
+	} else {
+		tray = new Tray(path.join(__dirname, 'img/favicon.png'));
+	}
 	createWindow();
 	var contextMenu = Menu.buildFromTemplate([
 		{
